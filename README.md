@@ -1,4 +1,7 @@
-# Instructions
+## Instructions
+This project makes use of docker to create a working environemnt. If you are unfamiliar with docker, you may skip this step and run everything on your host machine.
+
+To build the docker image, navigate to the Docker folder and input the folllowing command.
 ```
 docker build -t lanelines .
 ```
