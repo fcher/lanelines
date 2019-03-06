@@ -1,4 +1,4 @@
-## Instructions
+## Docker Instructions
 This project makes use of docker to create a working environemnt. If you are unfamiliar with docker, you may skip this step and run everything on your host machine.
 
 To build the docker image, navigate to the Docker folder and input the folllowing command.
@@ -203,7 +203,6 @@ Once you've defined your starting position, the window search re-centers itself
 based on the mean position of the non-zero pixels inside the window until it
 reaches the boundaries of the image.
 
-
 #### Phase 2.4.2 Calculating the Best-Fit Lines
 
 Once you have finished window search for one lane line, we need to find the
@@ -223,4 +222,11 @@ for this project: ```images_main.cpp``` and ```video_main.cpp```. As the names
 suggest, one is for testing your full pipeline on individual images that you
 select. The other one is for testing your full pipeline on video.
 
+### How to generate a video file with waypoints
+
+```
+./video_main <path_to_video_file>
+```
+
+By default all the video files are stored in the vidoe folder within the laneline_detection directory. The outputs can also be found in this directory. You can tweak many parameters of the output video such as frames per second, video codec and file quality in the file given.
 
